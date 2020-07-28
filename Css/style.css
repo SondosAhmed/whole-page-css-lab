@@ -212,15 +212,16 @@ nav {
     justify-content: center;
     height: 30%;
     margin: 0 auto;
-    margin: 10%;
+    margin: 5% 10%;
 }
 
 .offers p {
+    align-self: start;
     text-align: center;
-    padding: 5% 20%;
-    padding-top: 2%;
+    padding: 2% 20%;
     font-size: 14px;
-    color: grey;
+    color: rgb(71, 71, 71);
+    font-weight: 500;
 }
 
 .offers {
@@ -228,46 +229,75 @@ nav {
     font-size: 2rem;
 }
 
-.three_services div {
-    margin-top: 5%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: solid grey 2px;
-    border: 10px;
-    display: inline-block;
-}
-
-.bor {
-    border: 0.2rem;
-    border-color: grey;
-    border-radius: 10px;
-}
-
 .three_services {
+    margin-top: 3%;
+    height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
 .arch,
 .ID,
 .CD {
+    justify-self: stretch;
     box-sizing: border-box;
     width: 30%;
-    padding: 5px;
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
 }
 
-.arch div,
-.ID div,
-.CD div {
+#arc,
+#ID,
+#CD {
+    justify-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     border: solid 0.2rem;
     border-color: grey;
     border-radius: 10px;
+    padding: 2% 1.5%;
+}
+
+.icon1 {
+    background: url(.../img/archIcon.png);
+    height: 25%;
+    width: 30%;
+}
+
+.icon2 {
+    background: url(.../img/IDIcon.png);
+    height: 25%;
+    width: 25%;
+}
+
+.icon3 {
+    background: url(.../img/CDIcon.png);
+    height: 25%;
+    width: 30%;
+}
+
+.services-padding {
+    padding: 5% 3% 3% 4%;
+}
+
+.arch h2,
+.ID h2,
+.CD h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.arch p,
+.ID p,
+.CD p {
+    font-size: 14px;
+    color: rgb(71, 71, 71);
+    padding-bottom: 0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.cta2 {
+    padding-left: 4%;
 }
